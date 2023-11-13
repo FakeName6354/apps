@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <img src="{{ url_for('static', filename=image_url) }}" alt="Image">
+    
+    <h1>Welcome to Our Website!</h1>
+    <p>This is the index page.</p>
+ 
+	<a href="{{ url_for ('login') }}">Login</a><br>
+	<a href="{{ url_for ('registration') }}">Registration</a><br>
+        <a href="{{ url_for ('ping') }}">Ping</a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Profile</h1>
+    <p>id: {{ user_id }}.</p>
+    <p>name: {{ name }}.</p>
+    <p>username: {{ username }}.</p>
+    <img src="{{ url_for('static', filename=user_id) }}" alt="No Image yet">
+    <a href="{{ url_for ('article', id = user_id)}}"> IMAGE</a><br>
+</body>
+</html>
